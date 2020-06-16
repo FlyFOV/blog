@@ -8,3 +8,30 @@ title = "C缺陷与陷阱"
 **理解函数的声明** (*fp)()为调用该函数的方式，ANSI C允许程序员将该式简写为fp()\
 (*(void)(*)())0)() 编写一个独立运行于某种微处理器伤的C程序。当计算机启动时，硬件将调用首地址为0的子例程\
 **注意作为语句结束标志的分号** 如果一个函数返回值为void，此时编译器会隐含的将函数返回值类型视作int类型
+**指针与数组** 数组与指针的区别\
+{{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=0" >}}
+*(*（calendar+4）+7） = calendar[4][7]
+int calendar[12][31] 
+int(*monthp)[31] 
+monthp = calendar
+{{< / highlight >}}
+**非数组的指针** 检查malloc是否调用成功，并注意使用完后释放空间。
+**作为参数的数组声明** 如果我们使用数组名作为参数，那么数组名会立刻被转换为指向该数组第一个元素的指针。
+{{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=0" >}}
+main(int argc,char* argv[])
+{
+
+}
+main(int argc,char ** argv)
+{
+
+}
+{{< / highlight >}}
+**避免举隅法 synecdoche**  
+{{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=0" >}}
+char *q,*q
+p = "xyz"
+{{< / highlight >}}
+**空指针并非空字符串** 编译器保证由0(NULL)转换而来的指针不等于任何指针。当常数0被转换为指针使用时，这个指针绝对不能被解除饮用(dereference)。换句话说，当我们将0赋值给一个指针变量时，绝对不能企图使用该指针所指向的内存中存储的内容。\
+**边界计算与不对称边界** 差一错误，栏杆错误（off-by-one-error）。设计buffer函数，利用边界不对等原则。
+**求值顺序** C语言中之有四个运算符(&& || ? ,)
