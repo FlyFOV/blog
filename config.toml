@@ -1,5 +1,5 @@
 baseurl = "https://flyfov.github.io/rsgofov.github.io/"
-title = "johndoe"
+title = "Haotian Fan"
 
 theme = "hugo-coder"
 
@@ -16,13 +16,13 @@ pygmentscodefencesguesssyntax = true
 disqusShortname = "yourdiscussshortname"
 
 [params]
-    author = "John Doe"
-    description = "John Doe's personal website"
+    author = "Haotian Fan"
+    description = "Haotian Fan's personal website"
     keywords = "blog,developer,personal"
-    info = "Full Stack DevOps and Magician"
-    avatarurl = "images/avatar.jpg"
+    info = "Kings College London Graduate and software developer"
+    avatarurl = "images/profile.jpg"
     #gravatar = "john.doe@example.com"
-    footercontent = "Enter a text here."
+    #footercontent = "I am your worst nightmare---Eric Raymond"
 
     dateformat = "January 2, 2006"
 
@@ -70,34 +70,34 @@ disqusShortname = "yourdiscussshortname"
     name = "Github"
     icon = "fab fa-github"
     weight = 1
-    url = "https://github.com/johndoe/"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fab fa-gitlab"
-    weight = 2
-    url = "https://gitlab.com/johndoe/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 3
-    url = "https://twitter.com/johndoe/"
+    url = "https://github.com/FlyFOV"
+# [[params.social]]
+#     name = "Gitlab"
+#     icon = "fab fa-gitlab"
+#     weight = 2
+#     url = "https://gitlab.com/johndoe/"
+# [[params.social]]
+#     name = "Twitter"
+#     icon = "fab fa-twitter"
+#     weight = 3
+#     url = "https://twitter.com/johndoe/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
     weight = 4
-    url = "https://www.linkedin.com/in/johndoe/"
-[[params.social]]
-    name = "Medium"
-    icon = "fab fa-medium"
-    weight = 5
-    url = "https://medium.com/@johndoe"
-[[params.social]]
-    name = "RSS"
-    icon = "fas fa-rss"
-    weight = 6
-    url = "https://myhugosite.com/index.xml"
-    rel = "alternate"
-    type = "application/rss+xml"
+    url = "https://www.linkedin.com/in/fan-haotian-940931193/"
+# [[params.social]]
+#     name = "Medium"
+#     icon = "fab fa-medium"
+#     weight = 5
+#     url = "https://medium.com/@johndoe"
+# [[params.social]]
+#     name = "RSS"
+#     icon = "fas fa-rss"
+#     weight = 6
+#     url = "https://myhugosite.com/index.xml"
+#     rel = "alternate"
+#     type = "application/rss+xml"
 
 
 [languages]
@@ -112,7 +112,7 @@ disqusShortname = "yourdiscussshortname"
             url = "about/"
 
             [[languages.en.menu.main]]
-            name = "Blog"
+            name = "Articles"
             weight = 2
             url = "posts/"
 
@@ -128,15 +128,15 @@ disqusShortname = "yourdiscussshortname"
 
 
     [languages.pt-br]
-        languagename = "Português"
-        title = "João Ninguém"
+        languagename = "Chinese"
+        title = "范昊天"
 
         [languages.pt-br.params]
-            author = "João Ninguém"
-            info = "Full Stack DevOps e Mágico"
-            description = "Sítio pessoal de João Ninguém"
-            keywords = "blog,desenvolvedor,pessoal"
-            footercontent = "Coloque algum texto aqui."
+            author = "范昊天"
+            info = "伦敦国王学院毕业生，软件工程师"
+            description = "博客，项目，生活"
+            keywords = "博客，项目，生活"
+            footercontent = "风云再度变换."
 
         [languages.pt-br.menu]
 
