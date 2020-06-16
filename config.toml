@@ -1,4 +1,4 @@
-baseurl = "https://flyfov.github.io/rsgofov.github.io/"
+baseurl = "https://flyfov.github.io/"
 title = "Haotian Fan"
 
 theme = "hugo-coder"
